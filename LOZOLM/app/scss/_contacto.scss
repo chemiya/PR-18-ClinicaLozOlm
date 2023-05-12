@@ -1,0 +1,148 @@
+@use "mixinFlex";
+$selectorCONTACTO: ".contacto";//selecto definido
+
+#{$selectorCONTACTO} {
+    background-color: $azulClaro;
+    margin-top: 150px;
+
+    &__content {
+        /*display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;*/
+        @include mixinFlex.flex(column);//llamo mixin de flex
+        //en pequeño en columna para abo el contenido
+
+
+        @include breakpoint-up(medium) {//llamo mixin de breakpoint
+
+            display: flex;
+            flex-direction: row;//en grande, en una fila en row
+
+
+
+
+        }
+    }
+
+    &__formulario {
+        background-color: $blanco;
+        width: 80%;
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+
+        @include breakpoint-up(medium) {
+
+            width: 50%;
+
+        }
+
+        &__entrada {
+            margin-top: 20px;
+            /* display: flex;
+           justify-content: center;
+           html con flex flex-jc-c*/
+
+            >input {
+                width: 90%;
+                padding: 10px;
+
+            }
+
+            >textarea {
+                width: 90%;
+                padding: 10px;
+            }
+        }
+
+        &__boton {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        &__titulo {
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    &__cartas {
+        @include mixinFlex.flex(column);//llamo mixin de flex
+        width: 100%;
+
+
+        @include breakpoint-up(medium) {//llamo mixin de breakpoint
+
+
+
+            width: 50%;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+
+
+
+        }
+
+        &__carta {
+            height: 200px;
+            width: 40%;
+            padding: 10px;
+
+            &__interior {
+                background-color: $blanco;
+                height: 80%;
+                padding: 10px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+
+                >p {
+                    text-align: center;
+                }
+            }
+        }
+
+        /*
+        &__carta {
+            padding: 10px;
+            background-color: green;
+            width: 40%;
+            height:100%;
+            padding-top:30px;
+
+
+            &__interior {
+                background-color: $blanco;
+                height:100%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                >p {
+                    text-align: center;
+                }
+            }
+        }*/
+    }
+
+
+    &__icono {
+        font-size: 40px;
+    }
+}

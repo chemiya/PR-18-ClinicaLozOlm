@@ -1,0 +1,59 @@
+@use "mixinFlex";
+
+.nosotros {
+    margin-top: 100px;
+
+    &__titulo {
+        font-size: 40px;
+        text-align: center;
+
+        &__negrita {
+            font-weight: bold;
+            font-size: 50px;
+        }
+    }
+
+
+    &__imagen {
+        width: 400px;
+        border-radius: 30px;
+    }
+
+    &__seccion {
+        @include mixinFlex.flex(column);
+        margin-top: 120px;
+
+        @include breakpoint-up(large) {
+            @include mixinFlex.flex(row);
+
+        }
+
+
+        &__texto {
+
+            &.izq {//texto con clase aparte
+                margin: 20px;
+                font-size: 35px;
+            }
+
+            &.dcha {
+                margin: 20px;
+                font-size: 35px;
+                text-align: end;
+            }
+
+
+        }
+
+
+    }
+
+
+    &__boton {
+        margin-top: 20px;
+        /*display:flex;
+    justify-content: center;
+    en html con flex flex-jc-c*/
+    }
+
+}

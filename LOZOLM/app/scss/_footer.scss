@@ -1,0 +1,11 @@
+.footer{
+    background-color: $azulOscuro;
+    color:$blanco;
+    margin-top: 150px;
+    &__content{
+        flex-direction: column;
+        /*en html flex */
+
+        
+    }
+}

@@ -1,0 +1,104 @@
+@use "mixinFlex";
+
+.equipo {
+    margin-top: 150px;
+
+    &__titulo {
+        >h1 {
+            font-size: $fontTitulo;
+            text-align: center;
+        }
+    }
+
+    &__descripcion {
+        @include mixinFlex.flex(column);//en pequeño, los elementos para abajo en columna
+
+
+        @include breakpoint-up(medium) {
+            display: flex;
+            flex-direction: row;//en grande en fila
+
+
+        }
+
+
+        &__texto {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+
+            @include breakpoint-up(medium) {
+                width: 50%;
+
+            }
+
+            >h1 {
+                font-size: 30px;
+                text-align: center;
+
+                @include breakpoint-up(medium) {
+                    text-align: start;
+
+                }
+            }
+
+            >p {
+                font-weight: bold;
+                font-size: 20px;
+                text-align: center;
+
+                @include breakpoint-up(medium) {
+                    text-align: start;
+
+                }
+            }
+        }
+
+        &__cartas {
+            width: 100%;
+            @include mixinFlex.flex(column);
+
+            @include breakpoint-up(medium) {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;//para que salte, no caben todas al 50%
+                justify-content: center;
+
+
+            }
+
+            &__carta {
+                width: 40%;
+                padding: 20px;
+
+                &__interior {
+                    background-color: $azulClaro;
+                    padding: 20px;
+                    border-radius: 20px;
+                    @include mixinFlex.flex(column);
+
+                    >p {//inmediatamente como hijo de interior
+                        color: $blanco;
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+    }
+
+    &__imagen {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+
+        @include breakpoint-up(medium) {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

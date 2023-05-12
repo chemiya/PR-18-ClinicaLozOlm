@@ -1,0 +1,85 @@
+@use "mixinFlex";
+
+.tratamientos {
+    margin-top: 150px;
+    background-color: $azulClaro;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &__grid {
+
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint-up(large) {
+
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+        width: 100%;
+        padding: 20px;
+
+
+
+        @include breakpoint-up(large) {
+            @include mixinFlex.flex(column);
+            width: 33%;
+        }
+
+
+        &__interior {
+            background-color: $azulOscuro;
+            padding: 20px;
+            border-radius: 20px;
+            color: $blanco;
+            text-align: center;
+            height: 100%;
+
+
+
+            &__titulo {
+                font-size: 30px;
+                font-weight: bold;
+
+                padding: 10px;
+            }
+
+            &__descripcion {
+                font-size: 20px;
+
+            }
+
+        }
+    }
+
+
+    &__icon {
+        font-size: 70px;
+        padding: 10px;
+
+    }
+
+
+    &__intro {
+
+        &__titulo {
+            text-align: center;
+            font-size: $fontTitulo;
+        }
+
+        &__descripcion {
+            text-align: center;
+            font-size: 30px;
+        }
+    }
+
+    &__content {
+        background-color: $blanco;
+        border-radius: 40px;
+    }
+}

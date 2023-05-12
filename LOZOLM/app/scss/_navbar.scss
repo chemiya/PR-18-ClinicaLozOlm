@@ -1,0 +1,162 @@
+.header {
+    background-color: $azulClaro;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+
+    &__logo {
+        cursor: pointer;
+        margin-right: auto;
+
+        img {
+            height: 70px;
+            width: auto;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+
+    }
+
+    &__nav-links {
+        list-style: none;
+        display: none;
+
+        li {//en el interior de nav links
+            display: inline-block;
+            padding: 0 20px;
+        }
+
+        li:hover {
+            transform: scale(1.1);
+
+        }
+
+        a {
+            font-size: 700;
+            color: $blanco;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+    }
+
+    &__overlay a:hover {
+        transform: scale(1.1);
+    }
+
+    &__menu {
+        display: inherit;
+
+        button {
+            margin-left: 20px;
+            font-weight: 700;
+            color: $blanco;
+            padding: 9px 25px;
+            background: $azulOscuro;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+
+        button:hover {
+
+            color: black;
+            transform: scale(1.1);
+        }
+    }
+
+    &__btn {
+        display: none;
+
+        button {
+            margin-left: 20px;
+            font-weight: 700;
+            color: $blanco;
+            padding: 9px 25px;
+            background: $azulOscuro;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+
+        button:hover {
+
+            color: black;
+            transform: scale(1.1);
+        }
+    }
+
+    @include breakpoint-up(large) {
+        &__nav-links {
+            display: inherit;
+        }
+
+        &__btn {
+            display: inherit;
+        }
+
+        &__menu {
+            display: none;
+        }
+    }
+
+    a {
+        text-decoration: none;
+
+    }
+
+    &__overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: $azulClaro;
+        overflow: hidden;
+        transition: all 0.3s ease 0s;
+
+        a {
+            padding: 15px;
+            font-size: 36px;
+            display: block;
+            transition: all 0.3s ease 0s;
+            font-weight: 700;
+            color: #eceff1;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        a:focus {
+            color: black;
+        }
+    }
+
+    &__overlay-content {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 65px;
+    }
+
+}

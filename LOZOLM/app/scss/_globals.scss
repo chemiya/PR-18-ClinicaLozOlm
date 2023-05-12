@@ -1,0 +1,63 @@
+.container {
+  max-width: 69.375rem;
+  margin: 0 auto;
+
+
+  &--pall {
+    padding-top: 1rem;
+    padding-right: 0.25rem;
+    padding-bottom: 1rem;
+    padding-left: 0.25rem;
+
+
+    @include breakpoint-up(large) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+    }
+  }
+
+}
+
+.boton {
+  background-color: $azulOscuro;
+  padding: 20px;
+  border-radius: 50px;
+  color: $blanco;
+  font-weight: bold;
+  font-size: 25px;
+  border: none;
+  transition: all 0.3s ease 0s;
+
+  &:hover {//hover sobre este boton
+    color: black;
+    transform: scale(1.1);
+  }
+}
+
+
+
+
+* {
+  font-family: 'Lexend Giga', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.flex {//defino el flex para llamarlo en html
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}

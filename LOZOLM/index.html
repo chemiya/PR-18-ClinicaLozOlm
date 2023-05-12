@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Lozolm</title>
+    <link rel="shortcut icon" href="./fotos/icono.png">
+    <link rel="stylesheet" href="/app/scss/style.css">
+    <script src="https://kit.fontawesome.com/f877ada887.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!--navbar-->
+    <header class="header">
+        <div class="header__logo">
+            <img src="./../fotos/icono.png" alt="Logo de la marca">
+        </div>
+
+        <!--enlaces-->
+        <nav>
+            <ul class="header__nav-links">
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#equipo">EQUIPO</a></li>
+                <li><a href="#tratamiento">TRATAMIENTO</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+        
+        <a class="header__btn" href="#"><button>PEDIR CITA</button></a>
+
+        <a onclick="openNav()" class="header__menu" href="#"><button>MENU</button></a>
+
+
+        <div id="mobile-menu" class="header__overlay">
+            <a onclick="closeNav()" href="" class="header__close">&times;</a>
+
+            <div class="header__overlay-content">
+                <a href="#">NOSOTROS</a>
+                <a href="#">TRATAMIENTO</a>
+                <a href="#">EQUIPO</a>
+                <a href="#">CONTACTO</a>
+                
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!--hero con foto de fondo-->
+    <section class="hero">
+        <div class="hero__content container container--pall">
+
+            <!--texto-->
+            <div class="hero__texto">
+                ESPCIALISTAS PROFESIONALES
+                EN TODOS LOS CAMPOS
+                DE LA ODONTOLOGÍA
+            </div>
+
+
+            <!--imagen-->
+            <div class="hero__colImagen">
+                <img class="hero__imagen" src="./fotos/SONRIENDO.jpg">
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!--nosotros-->
+    <section class="nosotros" id="nosotros">
+        <div class="nosotros__content container container--pall">
+
+            <!--titulo-->
+            <div class="nosotros__titulo">
+                <p>Clínica dental en <span class="nosotros__titulo__negrita">Valladolid</span> con más de <span
+                        class="nosotros__titulo__negrita">43 años</span> de experiencia</p>
+            </div>
+
+
+            <!--seccion-->
+            <div class="nosotros__seccion">
+                <div class="nosotros__seccion__imagen">
+                    <img class="nosotros__imagen" src="./fotos/dentistas.jpg">
+                </div>
+
+                <div class="nosotros__seccion__texto izq">
+                    <p>Somos la clínica dental con más clientes
+                        en Valladolid debido a nuestras
+                        tecnologías de vanguardia
+                        y nuestro equipo cualificado.
+                    </p>
+                </div>
+
+            </div>
+
+
+
+            <!--seccion-->
+            <div class="nosotros__seccion">
+                <div class="nosotros__seccion__texto dcha">
+                    <p>Somos líderes en innovación y siempre
+                        aplicamos las últimas novedades
+                        en nuestros tratamientos.
+                    </p>
+                </div>
+
+
+                <div class="nosotros__seccion__imagen">
+                    <img class="nosotros__imagen" src="./fotos/innovacion.jpg">
+                </div>
+
+
+
+            </div>
+
+
+
+            <!--boton-->
+            <div class="nosotros__boton flex flex-jc-c">
+                <button class="boton">Contáctenos</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!--tratamientos-->
+    <section class="tratamientos" id="tratamientos">
+        <div class="tratamientos__content container container--pall">
+
+
+            <!--introduccion-->
+            <div class="tratamientos__intro">
+                <h2 class="tratamientos__intro__titulo">Nuestros tratamientos</h2>
+                <p class="tratamientos__intro__descripcion">
+                    Aplicamos todo tipo de tratamientos. En lo que necesites, nosotros te podemos ayudar.
+                </p>
+            </div>
+
+
+
+            <!--cartas-->
+            <div class="tratamientos__grid">
+
+
+
+                <!--primera carta-->
+                <div class="tratamientos__item">
+                    <div class="tratamientos__item__interior">
+                        <div class="tratamientos__icon">
+                            <i class="fa-solid fa-tooth"></i>
+                        </div>
+                        <div class="tratamientos__item__interior__titulo">
+                            <p>IMPLANTES</p>
+                        </div>
+
+                        <div class="tratamientos__item__interior__descripcion">
+                            <p>
+                                El implante dental sustituye a la raíz
+                                del diente que necesites recuperar.
+                            </p>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+                <!--segunda carta-->
+                <div class="tratamientos__item">
+                    <div class="tratamientos__item__interior">
+                        <div class="tratamientos__icon">
+                            <i class="fa-solid fa-face-smile"></i>
+                        </div>
+                        <div class="tratamientos__item__interior__titulo">
+                            <p>ORTODONCIA</p>
+                        </div>
+
+                        <div class="tratamientos__item__interior__descripcion">
+                            <p>
+                                Para corregir las distintas alteraciones de la dentadura para que recupere una posición
+                                natural.
+                            </p>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!--tercera carta-->
+                <div class="tratamientos__item">
+                    <div class="tratamientos__item__interior">
+                        <div class="tratamientos__icon">
+                            <i class="fa-solid fa-user-nurse"></i>
+                        </div>
+                        <div class="tratamientos__item__interior__titulo">
+                            <p>PRÓTESIS</p>
+                        </div>
+
+                        <div class="tratamientos__item__interior__descripcion">
+                            <p>
+                                Recuperarás esa sonrisa que perdiste por diferentes razones y volverás a ser tú.
+                            </p>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!--equipo-->
+    <section class="equipo" id="equipo">
+        <div class="equipo__content container container--pall">
+
+
+            <!--titulo-->
+            <div class="equipo__titulo">
+                <h1>Nuestro equipo</h1>
+            </div>
+
+
+
+
+            <div class="equipo__descripcion">
+
+
+                <!--texto-->
+                <div class="equipo__descripcion__texto">
+                    <h1>Estarás en buenas
+                        manos con nuestro
+                        equipo cualificado</h1>
+                    <p>Nuestro equipo tiene mucha experiencia y sabe aplicar las
+                        últimas técnicas.</p>
+
+                </div>
+
+
+
+                <!--cartas-->
+                <div class="equipo__descripcion__cartas">
+                    <div class="equipo__descripcion__cartas__carta">
+                        <div class="equipo__descripcion__cartas__carta__interior">
+                            <img class="equipo__imagen" src="./fotos/hombre.jpg">
+                            <p>Javier</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="equipo__descripcion__cartas__carta">
+                        <div class="equipo__descripcion__cartas__carta__interior">
+                            <img class="equipo__imagen" src="./fotos/mujer.jpg">
+                            <p>Ana</p>
+                        </div>
+
+                    </div>
+
+                    <div class="equipo__descripcion__cartas__carta">
+                        <div class="equipo__descripcion__cartas__carta__interior">
+                            <img class="equipo__imagen" src="./fotos/hombre1.jpg">
+                            <p>Jaime</p>
+                        </div>
+
+                    </div>
+
+                    <div class="equipo__descripcion__cartas__carta">
+                        <div class="equipo__descripcion__cartas__carta__interior">
+                            <img class="equipo__imagen" src="./fotos/mujer1.jpg">
+                            <p>Nuria</p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!--contacto-->
+    <section class="contacto" id="contacto">
+        <div class="contacto__content container container--pall">
+
+
+            <!--cartas-->
+            <div class="contacto__cartas">
+                <div class="contacto__cartas__carta">
+                    <div class="contacto__cartas__carta__interior">
+                        <i class="fa-solid fa-location-dot contacto__icono"></i>
+                        <p>Dirección</p>
+                        <p>Calle Santiago, Valladolid</p>
+
+                    </div>
+                </div>
+
+                <div class="contacto__cartas__carta">
+                    <div class="contacto__cartas__carta__interior">
+                        <i class="fa-solid fa-phone contacto__icono"></i>
+                        <p>Teléfono</p>
+                        <p>Llámanos al 945645645 </p>
+
+
+                    </div>
+                </div>
+
+                <div class="contacto__cartas__carta">
+                    <div class="contacto__cartas__carta__interior">
+                        <i class="fa-brands fa-whatsapp contacto__icono"></i>
+                        <p>Whatsapp</p>
+                        <p>Mensaje al 612612612</p>
+
+                    </div>
+                </div>
+
+                <div class="contacto__cartas__carta">
+                    <div class="contacto__cartas__carta__interior">
+                        <i class="fa-solid fa-clock contacto__icono"></i>
+                        <p>Horario</p>
+                        <p>Lunes a viernes, de 9:00 a 10:00</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!--fotmulario-->
+            <div class="contacto__formulario">
+                <h1 class="contacto__formulario__titulo">Contáctenos</h1>
+                <div class="contacto__formulario__entrada flex flex-jc-c ">
+                    <input placeholder="Nombre"></input>
+                </div>
+
+                <div class="contacto__formulario__entrada flex flex-jc-c">
+                    <input placeholder="Email"></input>
+                </div>
+
+                <div class="contacto__formulario__entrada flex flex-jc-c">
+                    <textarea rows="5" placeholder="Mensaje"></textarea>
+                </div>
+
+                <div class="contacto__formulario__boton flex flex-jc-c">
+                    <button class="boton">Enviar</button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!--footer-->
+    <section class="footer">
+        <div class="footer__content container container--pall flex flex-jc-c flex-ai-c">
+            <h1>José María Lozano Olmedo</h1>
+            <p>All rights reserved &copy;</p>
+        </div>
+
+
+    </section>
+
+
+
+    <script src="/app/js/script.js"></script>
+</body>
+
+</html>
