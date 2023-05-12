@@ -101,8 +101,7 @@ Se utilizaran solamente HTML, Javascript y SCSS.
 <p>Repositorio Github: https://github.com/chemiya/PR-18-ClinicaLozOlm.git</p>
 <p>Video Youtube: </p>
     
-    
-    <li><h2>Conclusiones</h2></li>
+<li><h2>Conclusiones</h2></li>
 
 He aprendido los pilares fundamentales de SCSS y he visto las ventajas que ofrece para dar estilos a una página web. He comprobado que facilita el desarrollo de los estilos de una página web y que tiene muchas ventajas sobre CSS.
 
