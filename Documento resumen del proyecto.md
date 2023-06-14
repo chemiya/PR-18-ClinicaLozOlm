@@ -99,7 +99,7 @@ Se utilizaran solamente HTML, Javascript y SCSS.
 <li><h2>Resultado final</h2></li>
 
 <p>Repositorio Github: https://github.com/chemiya/PR-18-ClinicaLozOlm.git</p>
-<p>Video Youtube: </p>
+<p>Video Youtube: https://www.youtube.com/watch?v=1ST3UCwVQlI </p>
     
 <li><h2>Conclusiones</h2></li>
 
